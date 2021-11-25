@@ -10,6 +10,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.blue[100],
       body: Padding(
         padding: EdgeInsets.fromLTRB(20.0, 40.0, 30.0, 0.0),
@@ -114,6 +115,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.blue[100],
       body: Padding(
         padding: EdgeInsets.all(3),
@@ -237,6 +239,7 @@ class RegisterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.blue[100],
       body: Padding(
         padding: EdgeInsets.all(3),
