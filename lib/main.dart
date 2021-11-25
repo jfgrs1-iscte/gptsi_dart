@@ -102,14 +102,6 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-
-
-
-
-
-
-
-
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
