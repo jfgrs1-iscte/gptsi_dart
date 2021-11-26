@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 void main() => runApp(MaterialApp(
     home: HomeScreen(),
@@ -170,7 +171,12 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
           Container(
-            padding: EdgeInsets.fromLTRB(20.0, 5.0, 20.0, 0.0),
+            decoration: BoxDecoration(
+              color: Colors.grey[200],
+              borderRadius: BorderRadius.circular(50),
+            ),
+            padding: EdgeInsets.fromLTRB(20.0,0.0, 20.0, 0.0),
+            margin: EdgeInsets.fromLTRB(0.0, 5.0, 0.0, 0.0),
             child: TextField(
               decoration: const InputDecoration(
                 border: UnderlineInputBorder(
@@ -189,7 +195,12 @@ class LoginScreen extends StatelessWidget {
             ),
           ),
           Container(
-            padding: EdgeInsets.fromLTRB(20.0, 5.0, 20.0, 0.0),
+            decoration: BoxDecoration(
+              color: Colors.grey[200],
+              borderRadius: BorderRadius.circular(50),
+            ),
+            padding: EdgeInsets.fromLTRB(20.0,0.0, 20.0, 0.0),
+            margin: EdgeInsets.fromLTRB(0.0, 5.0, 0.0, 0.0),
             child: TextField(
               decoration: const InputDecoration(
                 border: UnderlineInputBorder(
@@ -285,7 +296,12 @@ class RegisterScreen extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(20.0, 5.0, 20.0, 0.0),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(50),
+              ),
+              padding: EdgeInsets.fromLTRB(20.0,0.0, 20.0, 0.0),
+              margin: EdgeInsets.fromLTRB(0.0, 5.0, 0.0, 0.0),
               child: TextField(
                 decoration: const InputDecoration(
                   border: UnderlineInputBorder(
@@ -307,7 +323,12 @@ class RegisterScreen extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(20.0, 5.0, 20.0, 0.0),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(50),
+              ),
+              padding: EdgeInsets.fromLTRB(20.0,0.0, 20.0, 0.0),
+              margin: EdgeInsets.fromLTRB(0.0, 5.0, 0.0, 0.0),
               child: TextField(
                 decoration: const InputDecoration(
                   border: UnderlineInputBorder(
@@ -326,7 +347,12 @@ class RegisterScreen extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(20.0, 5.0, 20.0, 0.0),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(50),
+              ),
+              padding: EdgeInsets.fromLTRB(20.0,0.0, 20.0, 0.0),
+              margin: EdgeInsets.fromLTRB(0.0, 5.0, 0.0, 0.0),
               child: TextField(
                 decoration: const InputDecoration(
                   border: UnderlineInputBorder(
