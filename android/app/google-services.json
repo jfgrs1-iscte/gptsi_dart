@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "374044263270",
+    "project_id": "u-charge-8e677",
+    "storage_bucket": "u-charge-8e677.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374044263270:android:6620abc2994eff7f72bea7",
+        "android_client_info": {
+          "package_name": "ucharge.mvp.ucharge_mvp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374044263270-hh79ltdn4q6k9fq0sgmg417h2u1ml39o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbNuw-d9TWvMG2mI8TZJgNbul6F8jeC90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374044263270-hh79ltdn4q6k9fq0sgmg417h2u1ml39o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
