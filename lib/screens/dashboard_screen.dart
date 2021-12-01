@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ucharge_mvp/services/auth.dart';
 
 class DashBoard extends StatefulWidget{
   @override
@@ -7,6 +8,7 @@ class DashBoard extends StatefulWidget{
 
 class _DashBoardState extends State<DashBoard> {
   bool isVisible = false;
+  final AuthService _auth = AuthService();
 
   @override
   Widget build(BuildContext context) {
@@ -126,10 +128,12 @@ class _DashBoardState extends State<DashBoard> {
             Container(
               margin: EdgeInsets.fromLTRB(70.0, 15.0, 0.0, 0.0),
               child: RaisedButton(
-                onPressed: () {},
+                onPressed: () async {
+                  await _auth.signOut();
+                },
                 padding: EdgeInsets.symmetric(horizontal: 100.0),
                 child: Text(
-                  'REGISTAR',
+                  'SAIR',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 14.0,

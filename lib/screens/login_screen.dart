@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:ucharge_mvp/services/auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 
+import 'dashboard_screen.dart';
+
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -117,10 +119,13 @@ class _LoginScreenState extends State<LoginScreen> {
               child: RaisedButton(
                 onPressed: () async {
                   dynamic result = await _auth.signInAnon();
+                  Navigator.pop(context);
                   if (result == null ) {
                     print('error signing in');
                   }else {
-                    print('BORAAA ENTROU');
+                    print('Anonymous Login Success. User :');
+                    print(result.uid);
+
                   }
                 },
                 padding: EdgeInsets.symmetric(horizontal: 100.0),

@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:ucharge_mvp/models/user.dart';
 
 class AuthService {
@@ -8,6 +9,12 @@ class AuthService {
   myUser? _userFromFirebaseUser(User? user) {
     return user != null ? myUser(uid: user.uid) : null ;
   }
+
+  Stream<myUser?> get user {
+    return _auth.authStateChanges().map(_userFromFirebaseUser);
+  }
+
+
 
   Future signInAnon() async {
     try {
@@ -19,4 +26,14 @@ class AuthService {
       return null;
     }
   }
+
+  Future signOut() async {
+    try{
+      return await _auth.signOut();
+    } catch(e) {
+      print(e.toString());
+      return null;
+    }
+  }
+
 }
