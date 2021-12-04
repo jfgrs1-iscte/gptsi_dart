@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ucharge_mvp/models/user.dart';
-import 'package:ucharge_mvp/screens/dashboard_screen.dart';
 import 'package:ucharge_mvp/screens/home_screen.dart';
 import 'package:provider/provider.dart';
-import 'package:ucharge_mvp/screens/register_screen.dart';
-
+import 'package:ucharge_mvp/screens/profile_screen.dart';
 
 class Wrapper extends StatelessWidget {
   const Wrapper({Key? key}) : super(key: key);
@@ -18,7 +16,7 @@ class Wrapper extends StatelessWidget {
       return HomeScreen();
     } else {
       print('user logged in');
-      return DashBoard();
+      return Perfil();
     }
   }
 }

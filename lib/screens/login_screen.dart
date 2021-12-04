@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ucharge_mvp/services/auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:ucharge_mvp/shared/loading.dart';
 
-import 'dashboard_screen.dart';
 
 
 class LoginScreen extends StatefulWidget {

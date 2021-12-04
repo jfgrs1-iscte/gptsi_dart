@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:ucharge_mvp/screens/profile_screen.dart';
 import 'login_screen.dart';
 import 'register_screen.dart';
-import 'dashboard_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => DashBoard()),
+                            builder: (context) => Perfil()),
                       );
                     },
                     color: Colors.white,
