@@ -1,6 +1,8 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:ucharge_mvp/models/myUser.dart';
+import 'package:ucharge_mvp/models/Brew.dart';
+import 'package:ucharge_mvp/models/user.dart';
 
 
 class UserList extends StatefulWidget {
@@ -15,11 +17,11 @@ class _UserListState extends State<UserList> {
   @override
   Widget build(BuildContext context) {
 
-    final users = Provider.of<List<MyUser>>(context);
+    final brews = Provider.of<List<Brew>>(context);
     
-    users.forEach((user) {
-      print(user.username);
-      print(user.password);
+    brews.forEach((user) {
+      print(user.sugars);
+      print(user.strength);
     });
 
     return Container();

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 class CacifoDesignado extends StatefulWidget {
   @override
@@ -8,6 +9,12 @@ class CacifoDesignado extends StatefulWidget {
 class _CacifoDesignadoState extends
 State<CacifoDesignado>{
   bool isVisible = false;
+  Random random = new Random();
+  int randomNumber = 3654;
+
+  void _changeCode() {
+    randomNumber = random.nextInt(9999) + 1000;
+  }
 
   @override
   Widget build(BuildContext context){
@@ -100,7 +107,7 @@ State<CacifoDesignado>{
                     padding: EdgeInsets.fromLTRB(10,5, 0.0, 10),
                     child: Container(
                       padding: EdgeInsets.fromLTRB(50,0, 0, 0),
-                      child: Text('Código : 0879',
+                      child: Text('Código : ' + randomNumber.toString(),
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -129,7 +136,11 @@ State<CacifoDesignado>{
                 Container(
                   width: 375,
                   child: RaisedButton(
-                    onPressed: (){},
+                    onPressed: (){
+                      setState(() {
+                        _changeCode();
+                      });
+                      },
                     color: Colors.white,
                     child: Text(
                       'Alterar o código',

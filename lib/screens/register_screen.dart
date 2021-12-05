@@ -156,7 +156,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   onPressed: () async {
                     if(_formKey.currentState!.validate()){
                       setState(() => loading = true);
-                      dynamic result = await _auth.registerWithEmailAndPassword(email, password);
+                      dynamic result = await _auth.registerWithEmailAndPassword(username,email, password);
                       if(result == null) {
                         setState(() {
                           error = 'Introduza informações Validas!';
